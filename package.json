@@ -1,0 +1,12 @@
+{
+  "name": "shareit-webrtc-server",
+  "version": "1.0.0",
+  "description": "Signaling server for WebRTC ShareIt",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "socket.io": "^4.7.4"
+  }
+}
