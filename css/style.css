@@ -1,0 +1,134 @@
+/* Default Dark Mode */
+body {
+    font-family: sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #bb86fc;
+}
+
+main section {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 6px;
+}
+
+.upload-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bb86fc;
+    color: #121212;
+    padding: 15px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #8a56ac;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#file-input {
+    display: none; /* Hide the default file input */
+}
+
+#progress-area.hidden,
+#received-files.hidden {
+    display: none;
+}
+
+#progress-bar-container {
+    background-color: #444;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#progress-bar {
+    background-color: #bb86fc;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+#progress-percentage {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#file-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.file-item {
+    background-color: #333;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.thumbnail-container {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 5px;
+    overflow: hidden;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    cursor: pointer;
+}
+
+.thumbnail {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.file-name {
+    font-size: 0.8em;
+    word-break: break-all;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+  }
