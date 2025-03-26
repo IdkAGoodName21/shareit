@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better ShareIt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <header>
+            <h1>Better ShareIt</h1>
+        </header>
+        <main>
+            <section id="file-selection">
+                <label for="file-input" class="upload-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+                        <path fill-rule="evenodd" d="M12 3.75a.75.75 0 00-1.5 0v7.5h-7.5a.75.75 0 000 1.5h7.5v7.5a.75.75 0 001.5 0v-7.5h7.5a.75.75 0 000-1.5h-7.5V3.75z" clip-rule="evenodd" />
+                    </svg>
+                    Select Files to Send
+                </label>
+                <input type="file" id="file-input" multiple>
+            </section>
+
+            <section id="progress-area" class="hidden">
+                <h2>Transferring Files</h2>
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                    <span id="progress-percentage">0%</span>
+                </div>
+                <div id="transfer-status"></div>
+            </section>
+
+            <section id="received-files" class="hidden">
+                <h2>Received Files</h2>
+                <div id="file-list">
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Better ShareIt</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+                      </html>
